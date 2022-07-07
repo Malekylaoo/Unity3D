@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4633140203338054543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4633140203338054541}
+  - component: {fileID: 4633140203338054542}
+  - component: {fileID: 4633140203338054540}
+  m_Layer: 0
+  m_Name: Door 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4633140203338054541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633140203338054543}
+  m_LocalRotation: {x: -0, y: 0.011870844, z: -0, w: 0.99992955}
+  m_LocalPosition: {x: 82.591, y: 1.2160001, z: 64.48306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1821098244730768943}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 1.36, z: 0}
+--- !u!95 &4633140203338054542
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633140203338054543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b189dacf1f667914f89fabc98fb5e614, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4633140203338054540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633140203338054543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82309f23ad1466429e1b8138ad30c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
+--- !u!1001 &343545273882656265
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4633140203338054541}
+    m_Modifications:
+    - target: {fileID: 1684523794078365217, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1308064540b76a488431b360cee6b89, type: 2}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8967743
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9397688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19430542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99998665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0051703136
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288043361393840184, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679999899185707430, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca5f9003d85586d4d96ea25bf9f6bb44, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+--- !u!1 &4559529777711558193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4288043361393840184, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+  m_PrefabInstance: {fileID: 343545273882656265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1821098244730768943 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2126072511325663270, guid: 8a27a17d441b3024db8e85ee3f2a32b9, type: 3}
+  m_PrefabInstance: {fileID: 343545273882656265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &343545273882656270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4559529777711558193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
