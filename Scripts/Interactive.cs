@@ -24,11 +24,11 @@ public class Interactive : MonoBehaviour
 
     private void DrawRay()
     {
-        if(Physics.Raycast(_ray, out _hit, _maxDistanceRay))
+        if (Physics.Raycast(_ray, out _hit, _maxDistanceRay))
         {
             Debug.DrawRay(_ray.origin, _ray.direction * _maxDistanceRay, Color.blue);
         }
-        if(_hit.transform == null)
+        if (_hit.transform == null)
         {
             Debug.DrawRay(_ray.origin, _ray.direction * _maxDistanceRay, Color.red);
         }
@@ -36,19 +36,14 @@ public class Interactive : MonoBehaviour
 
     private void Interact()
     {
-        if(_hit.transform != null && _hit.transform.GetComponent<Door>())
+        if (_hit.transform != null && _hit.transform.TryGetComponent(out Door door))
         {
             Debug.DrawRay(_ray.origin, _ray.direction * _maxDistanceRay, Color.green);
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("ﬂ Ì‡Ê‡Î!");
-                _hit.transform.GetComponent<Door>().Open();
+                door.Open();
             }
         }
-    }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("œ Ã");
     }
 }
