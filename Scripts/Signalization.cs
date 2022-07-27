@@ -18,31 +18,31 @@ public class Signalization : MonoBehaviour
         }
     }
 
-    public IEnumerator ChangeVolumeUp()
+    public void SignalizationUp()
     {
-        Debug.Log("Я дошел до Up");
-        while (_audioSource.volume < 1)
-        {
-            _audioSource.volume += Mathf.MoveTowards(0, 1, Time.deltaTime / _timeTurnVolume);
-            yield return null;
-        }
+        PlayAudio();
         _audioSource.loop = true;
+        StartCoroutine(ChangeVolume(1));
     }
 
-    public IEnumerator ChangeVolumeDown()
+    public void SignalizationDown()
     {
-        Debug.Log("Я дошел до Down");
-        while (_audioSource.volume > 0)
-        {
-            _audioSource.volume -= Mathf.MoveTowards(0, 1, Time.deltaTime / _timeTurnVolume);
-            yield return null;
-        }
         _audioSource.loop = false;
+        StartCoroutine(ChangeVolume(0));
     }
 
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
         _audioSource.volume = 0;
+    }
+
+    private IEnumerator ChangeVolume(int target)
+    {
+        while (_audioSource.volume != target)
+        {
+            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, target, Time.deltaTime / _timeTurnVolume);
+            yield return null;
+        }
     }
 }
