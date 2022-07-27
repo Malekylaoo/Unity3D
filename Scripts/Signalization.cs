@@ -6,6 +6,7 @@ using UnityEngine;
 public class Signalization : MonoBehaviour
 {
     [SerializeField] private float _timeTurnVolume;
+
     private AudioSource _audioSource;
 
     public void PlayAudio()

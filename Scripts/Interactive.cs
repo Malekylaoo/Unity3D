@@ -5,10 +5,10 @@ using UnityEngine;
 public class Interactive : MonoBehaviour
 {
     [SerializeField] private Camera _fpcCamera;
+    [SerializeField] private float _maxDistanceRay;
+
     private Ray _ray;
     private RaycastHit _hit;
-
-    [SerializeField] private float _maxDistanceRay;
 
     private void Update()
     {

@@ -8,7 +8,7 @@ public class Move : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _shiftSpeed;
 
-    void Update()
+    private void Update()
     {
         Mover(SelectSpeed());
     }
